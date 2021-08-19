@@ -1,0 +1,129 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(90deg, #4ec8fc, #904efc);
+}
+
+.main {
+  display: flex;
+  height: 70vh;
+  width: 70vw;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.left {
+  height: 70vh;
+  width: 60vw;
+}
+
+.left > img {
+  object-fit: cover;
+  width: 90%;
+  height: 90%;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.right {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.right_prop {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  background-color: #e4f1ff;
+  border: none;
+  height: 30px;
+}
+
+label {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+button {
+  background-color: #0075ff;
+  border: none;
+  height: 30px;
+  width: 80px;
+  margin-top: 20px;
+}
+
+.conn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.connect {
+  width: 50%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+hr {
+  width: 100%;
+}
+
+.connect > p {
+  color: gray;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.logos {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+}
+
+.logos > img {
+  width: 30px;
+  height: 30px;
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.bottom > p {
+  font-size: 10px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 587px) {
+  .left {
+    display: none;
+  }
+  .right {
+    width: 100%;
+  }
+
+  body {
+    background-image: linear-gradient(180deg, #4ec8fc, #904efc);
+  }
+}
+
+@media screen and (max-width: 240px) {
+  input {
+    width: 90%;
+  }
+}
